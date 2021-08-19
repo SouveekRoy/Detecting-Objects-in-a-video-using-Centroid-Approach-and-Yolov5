@@ -14,7 +14,7 @@ The centroid tracking algorithm is a multi-step process. We will review each of 
 
 ### Step 1: Accept bounding box coordinates and compute centroids
 
-![Screenshot](screenshot1.png)
+![Step1 image](../images/step1.png)
 
 The centroid tracking algorithm implies that each identified item in each frame is given a set of bounding box (x, y)-coordinates.
 
