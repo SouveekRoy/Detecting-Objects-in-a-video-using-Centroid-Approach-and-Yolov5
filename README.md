@@ -14,7 +14,8 @@ The centroid tracking algorithm is a multi-step process. We will review each of 
 
 ### Step 1: Accept bounding box coordinates and compute centroids
 
-![App Screenshot](https://via.placeholder.com/step1.png?text=App+Screenshot+Here)
+![App Screenshot](/step1.png)
+![Test Image 4](https://github.com/SouveekRoy/Object-Detection-In-a-Video-using-Centroid-Approach-and-YOLO5/blob/master/images/step1.png 112)
 
 The centroid tracking algorithm implies that each identified item in each frame is given a set of bounding box (x, y)-coordinates.
 
