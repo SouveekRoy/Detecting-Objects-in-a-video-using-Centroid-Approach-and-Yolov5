@@ -1,3 +1,4 @@
+
 # Object Detection in a video using Centroid Approach and Yolov5
 
 Object detection is a computer vision approach for detecting things in photos and videos. To obtain relevant results, object detection algorithms often use machine learning or deep learning. We can recognise and locate objects of interest in photos or video in a handful of seconds when we glance at them. The purpose of object detection is to use a computer to imitate this intelligence.
@@ -56,3 +57,19 @@ What are we going to do with it now that it hasn't been affiliated with anything
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+We must register the new object if there are more input detections than there are existing objects being tracked. The term "registration" simply refers to the process of adding a new object to our list of tracked objects by:
+
+1. Assigning it a new object ID
+2. Storing the centroid of the bounding box coordinates for that object
+
+Then we can return to Step #2 and repeat the process for each frame in our video stream.
+
+Figure 4 depicts the process of associating current object IDs with minimum Euclidean distances before registering a new object.
+
+### Step 5: Deregister old objects
+
+Any good object tracking method must be able to detect when an object has vanished, vanished from view, or vanished from the field of view.
+
+The exact way you handle these scenarios depends on where your object tracker is supposed to go, but in this version, we'll deregister old objects if they can't be matched to any existing objects for a total of N frames.
+
+  
