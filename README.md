@@ -26,7 +26,7 @@ We'll give these bounding boxes unique IDs because they're the first ones our sy
 
 ### Step 2: Compute Euclidean distance between new bounding boxes and existing objects
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/SouveekRoy/Object-Detection-In-a-Video-using-Centroid-Approach-and-YOLO5/blob/master/images/step2.png)
 
 We repeat Step #1 of computing object centroids for each subsequent frame in our video stream; however, instead of assigning a new unique ID to each detected object (which would defeat the purpose of object tracking), we must first determine if the new object centroids (yellow) can be associated with the old object centroids (red) (purple).
 We compute the Euclidean distance (highlighted with green arrows) between each pair of existing object centroids and input object centroids to complete this operation.
@@ -39,7 +39,7 @@ The answer can be found in Step #3.
 
 ### Step 3: Update (x, y)-coordinates of existing objects
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/SouveekRoy/Object-Detection-In-a-Video-using-Centroid-Approach-and-YOLO5/blob/master/images/step3.png)
 
 The centroid tracking algorithm's key assumption is that a given object may move between frames, but that the distance between the centroids for frames F t and F t + 1 will be lower than all other distances between objects.
 
@@ -53,7 +53,7 @@ What are we going to do with it now that it hasn't been affiliated with anything
 
 ### Step 4: Register new objects
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/SouveekRoy/Object-Detection-In-a-Video-using-Centroid-Approach-and-YOLO5/blob/master/images/step4.png)
 
 We must register the new object if there are more input detections than there are existing objects being tracked. The term "registration" simply refers to the process of adding a new object to our list of tracked objects by:
 
