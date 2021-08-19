@@ -1,1 +1,1 @@
-# Detecting-Objects-in-a-video-using-Centroid-Approach-and-Yolov5
+# Object Detection in a video using Centroid Approach and Yolov5
